@@ -20,7 +20,7 @@ for page in range (1,5):
 
     soup = BeautifulSoup(resp.text, "lxml")
     tags = soup.find_all(attrs={"data-qa":"serp-item__title"})
-    # print(resp.text)
+    
     for iter in tqdm.tqdm(tags):
         time.sleep(5)
         
